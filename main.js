@@ -1,6 +1,10 @@
 const numberOnScreen = document.querySelector(".number_viewer")
 
 function decrementFunction() {
+    if(Number(numberOnScreen.innerHTML) == 0) {
+        Number(numberOnScreen.innerHTML) = 0
+    }
+
     numberOnScreen.innerHTML = Number(numberOnScreen.innerHTML) -1
 }
 
